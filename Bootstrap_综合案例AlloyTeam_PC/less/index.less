@@ -1,0 +1,57 @@
+// 头部
+.navbar-default{
+    // 透明
+    background-color:transparent;
+    border: 0;
+}
+.navbar .container .collapse .nav a{
+    color: hsla(0,0%,100%,.65);
+    font-weight: 400;
+    &.active{
+        color: #f2b535;
+    }
+    // &.hot{
+    //     background-image: -webkit-linear-gradient(left,#cddc39,#ff9800 25%,#cddc39 50%,#ff9800 75%,#cddc39)!important;
+    // }
+}
+
+
+// banner
+.carousel{
+    // 自己检查官方网页的轮播图响应大小
+    // 媒体查询前，需要将图片本身的大小层叠掉
+    img{
+        // 检查轮播图网页代码后，应该是.carousel-inner>.item>a>img，但我们可以用设置为最重要
+        height: 100%!important;
+    }
+    @media (max-width:992px) {
+        .item{
+            height: 400px;
+        }
+    }
+    @media (max-width:768px) {
+        .item{
+            height: 250px;
+        }
+    }
+    @media (min-width:992px) {
+        .item{
+            height: 500px;
+        }
+    }
+}
+
+// 开源项目
+.project{
+    padding-top: 30px;
+    text-align: center;
+    .container{
+        // background-color: antiquewhite;
+        // 栅格布局，中间不能加margin，所以中间的空，给内容定宽高。col的自己都有padding
+        a{
+            display: block;
+            height: 200px;
+            background-color: aqua;
+        }
+    }
+}

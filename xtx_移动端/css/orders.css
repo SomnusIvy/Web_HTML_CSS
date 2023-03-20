@@ -1,0 +1,275 @@
+body{
+    background-color: #f7f7f8;
+}
+
+.red{
+    color: #cf4444;
+}
+.pannel{
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* 主体内容 */
+.main{
+    /* 下面的80是因为不让底部支付把被内容遮盖掉 */
+    padding: 12px 11px 80px;
+}
+
+
+.main .address{
+    padding: 15px 0 15px 11px;
+    width: 354px;
+	height: 85px;
+    display: flex;
+
+    
+    align-items: center;
+}
+.main .address .location{
+    /* margin-top: 8px; */
+
+    margin-right: 11px;
+    width: 30px;
+	height: 30px;
+	background-image: linear-gradient(90deg, 
+		#6fc2aa 5%, 
+		#54b196 100%);
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+}
+.main .address .user{
+    flex: 1;
+    font-family: PingFangSC-Regular;
+	font-size: 12px;
+    line-height: 18px;
+}
+.main .address .user em{
+    display: block;
+    margin-bottom: 8px;
+    color: #262626;
+}
+.main .address .user i{
+    /* margin-right: 13px; */
+    /* 名字预留空 */
+    display: inline-block;
+    width: 50px;
+
+    font-size: 15px;
+}
+.main .address .more{
+    width: 44px;
+	height: 44px;
+	background-color: #2ad1ff;
+	border: solid 1px #3a9cff;
+    line-height: 44px;
+    color: #808080;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+.main .goods{
+    padding: 11px;
+    width: 354px;
+	height: 107px;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+}
+.main .goods img{
+    margin-right: 12px;
+    width: 85px;
+	height: 85px;
+	border-radius: 2px;
+}
+.main .goods .content{
+    width: 192px;
+    font-family: PingFangSC-Regular;
+	font-size: 13px;
+    color: #262626;
+
+    flex: 1;
+
+}
+.main .goods .content i{
+    display: inline-block;
+    /* margin-top: 5px;
+    margin-bottom: 5px; */
+
+    margin: 5px 0;
+
+    padding: 3px 4px;
+    /* width: 108px;
+    height: 22px; */
+
+    background-color: #f7f7f8;
+	border-radius: 2px;
+    font-family: PingFangSC-Regular;
+	font-size: 11px;
+    color: #888888;
+}
+.main .goods .content span em{
+    font-size: 16px;
+}
+.main .goods .content span{
+    font-size: 16px;
+}
+.main .goods .content s{
+    margin-left: 12px;
+    font-size: 12px;
+    color: #999999;
+    font-family: ArialMT;
+}
+
+.main .goods .count{
+    /* margin-top: 8px;
+    margin-left: 22px; */
+    /* flex: 1; */
+    /* width: 18px;   
+    height: 18px; */
+
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+
+    font-family: ArialMT;
+	font-size: 15px;
+    color: #262626;
+}
+
+
+.main .express{
+    width: 354px;
+	height: 125px;
+    padding: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: PingFangSC-Regular;
+	font-size: 13px;
+    color: #262626;
+	line-height: 21px;
+}
+.main .express .left{
+    position: relative;
+}
+.main .express .left p:first-child{
+    position: relative;
+    top: -22px;
+}
+.main .express .left p:last-child{
+    position: relative;
+    top: 22px;
+}
+.main .express .middle span{
+    margin-left: -34px;
+    font-size: 12px;
+    color: #989898;
+}
+.main .express .right{
+    position: relative;
+}
+.main .express .right p:first-child{
+    position: relative;
+    top: -32px;
+}
+.main .express .right p:last-child{
+    position: relative;
+    top: 32px;
+}
+.main .express .right p span{
+    margin-left: 6px;
+    width: 7px;
+	height: 11px;
+    color: #808080;
+    /* line-height: 11px; */
+    font-size: 14px;
+    /* text-align: bottom; */
+}
+
+
+.main .money{
+    padding: 14px;
+    width: 354px;
+	height: 125px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: PingFangSC-Regular;
+	font-size: 13px;
+    color: #262626;
+	line-height: 21px;
+}
+.main .money .left{
+    position: relative;
+}
+.main .money .left p:first-child{
+    position: relative;
+    top: -22px;
+}
+.main .money .left p:last-child{
+    position: relative;
+    top: 22px;
+}
+.main .money .right{
+    position: relative;
+}
+.main .money .right p:first-child{
+    position: relative;
+    top: -22px;
+}
+.main .money .right p:nth-child(2){
+    position: relative;
+    right: -14px;
+}
+.main .money .right p:last-child{
+    position: relative;
+    top: 22px;
+}
+
+
+/* 底部支付 */
+.pay{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 11px;
+
+    height: 80px;
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #ededed;
+}
+.pay .left{
+    font-size: 12px;
+}
+.pay .left i{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: AccidentalPresidency;
+}
+.pay .left em{
+    font-size: 18px;
+}
+.pay .right button{
+    width: 91px;
+	height: 35px;
+    /* 渐变背景 */
+    background-image: linear-gradient(90deg, #6fc2aa 5%, #54b196 100%);
+    border-radius: 3px;
+    font-family: MicrosoftYaHei;
+	font-size: 13px;
+    line-height: 35px;
+    color: #ffffff;
+}

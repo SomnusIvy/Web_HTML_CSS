@@ -1,0 +1,38 @@
+.navbar-default {
+  background-color: transparent;
+  border: 0;
+}
+.navbar .container .collapse .nav a {
+  color: hsla(0, 0%, 100%, 0.65);
+  font-weight: 400;
+}
+.navbar .container .collapse .nav a.active {
+  color: #f2b535;
+}
+.carousel img {
+  height: 100%!important;
+}
+@media (max-width: 992px) {
+  .carousel .item {
+    height: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .carousel .item {
+    height: 250px;
+  }
+}
+@media (min-width: 992px) {
+  .carousel .item {
+    height: 500px;
+  }
+}
+.project {
+  padding-top: 30px;
+  text-align: center;
+}
+.project .container a {
+  display: block;
+  height: 200px;
+  background-color: aqua;
+}
